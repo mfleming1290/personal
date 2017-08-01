@@ -1,0 +1,30 @@
+<section>
+  <h3>Game of Thrones API App</h3>
+  <p>Click to get more info about each house</p>
+  <img (click)='baratheonGet()' class="img-responsive" src="../../../assets/images/baratheon.png" alt="Baratheon house image">
+  <img (click)='lannisterGet()' class="img-responsive" src="../../../assets/images/lannister.jpg" alt="Lannister house image">
+  <img (click)='starkGet()' class="img-responsive" src="../../../assets/images/stark.jpg" alt="Stark house image">
+  <img (click)='targaryenGet()' class="img-responsive" src="../../../assets/images/targaryen.jpg" alt="Targaryen house image">
+
+  <div *ngIf='words'>
+    <table class="table table-striped">
+      <thead>
+        <tr>   
+        <th>Name</th>
+        <th>Title</th>
+        <th>Region</th>
+        <th>Coat of Arms</th>   
+        <th>Titles</th>   
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{words.name}}</td>
+          <td>{{words.title}}</td>
+          <td>{{words.region}}</td>
+          <td>{{words.coatOfArms}}</td>
+          <td>{{words.titles}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

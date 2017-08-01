@@ -1,0 +1,30 @@
+<h3>Weather API app</h3>
+<p>Get the weather in your city</p>
+<form (submit)='getWeather()'>
+    <div class='form-group'>
+      <label for="City">City:</label>
+      <input class="form-control" type="text" name="city" [(ngModel)]="check.city">
+      <button class='btn mce-btn-small'>Get Weather</button>
+    </div>
+</form>
+<div *ngIf='weather'>
+  <table class="table table-striped">
+    <thead>
+      <tr>   
+      <th>Clouds</th>
+      <th>Humidity</th>
+      <th>Average Temperature</th>
+      <th>Temperature High</th>   
+      <th>Temperature Low</th>   
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ status }}</td>
+        <td>{{ humidity }}</td>
+        <td>{{ temperatureAvg }}</td>
+        <td>{{ temperatureHigh }}</td>
+        <td>{{ temperatureLow }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

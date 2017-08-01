@@ -1,0 +1,34 @@
+<section>
+  <h3>Gold Gathering App</h3>
+  <p>Click to earn or gamble</p>
+  <h4>You have {{gold}} gold</h4>
+<div>
+  <h1>Farm</h1>
+  <img class="img-thumbnail" src="../../../assets/images/farm.jpeg" alt="Farm Image">
+  <p>(earns 10-20 golds)</p>
+  <button (click)='farm()'> Farm</button>
+</div>
+<div>
+    <h1>Cave</h1>
+    <img class="img-thumbnail" src="../../../assets/images/cave.jpg" alt="Cave Image">
+    <p>(earns 5-10 golds)</p>
+    <button (click)='cave()'> Cave</button>
+</div>
+<div>
+    <h1>House</h1>
+    <img class="img-thumbnail" src="../../../assets/images/house.jpeg" alt="House Image">
+    <p>(earns 2-5 golds)</p>
+    <button (click)='house()'> House</button>
+</div>
+<div>
+    <h1>Casino</h1>
+    <img class="img-thumbnail" src="../../../assets/images/casino.jpg" alt="Casino Image">
+    <p>(earns/takes 0-50 golds)</p>
+    <button (click)='casino()'> Casino</button>
+</div>
+<div id='activities' *ngIf='activities' >
+  <ul class="list-group" *ngFor='let activity of activities | reverse'>
+    <li class="list-group-item">{{activity}}</li>
+  </ul>
+</div>
+</section>

@@ -1,0 +1,174 @@
+<h3>Pokedex API App</h3>
+<p>Click on a pokemon to get more info about it</p>
+<div *ngIf='pokemon' id="pokedex">
+  <table class="table table-striped">
+      <thead>
+        <tr>   
+        <th>Name</th>
+        <th>Picture</th>
+        <th>Height</th>
+        <th>Types</th>   
+        <th>Weight</th>   
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{pokemon.name}}</td>
+          <td><img src="http://pokeapi.co/media/img/{{pokemon.id}}.png" alt="image of pokemon"></td>
+          <td>{{pokemon.height}}</td>
+          <td><span *ngFor='let type of pokemon.types'> {{type.type.name}}, </span></td>
+          <td>{{pokemon.weight}}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+<img (click)='getPokemon(1)' src="http://pokeapi.co/media/img/1.png">
+<img (click)='getPokemon(2)' src="http://pokeapi.co/media/img/2.png">
+<img (click)='getPokemon(3)' src="http://pokeapi.co/media/img/3.png">
+<img (click)='getPokemon(4)' src="http://pokeapi.co/media/img/4.png">
+<img (click)='getPokemon(5)' src="http://pokeapi.co/media/img/5.png">
+<img (click)='getPokemon(6)' src="http://pokeapi.co/media/img/6.png">
+<img (click)='getPokemon(7)' src="http://pokeapi.co/media/img/7.png">
+<img (click)='getPokemon(8)' src="http://pokeapi.co/media/img/8.png">
+<img (click)='getPokemon(9)' src="http://pokeapi.co/media/img/9.png">
+<img (click)='getPokemon(10)' src="http://pokeapi.co/media/img/10.png">
+<img (click)='getPokemon(11)' src="http://pokeapi.co/media/img/11.png">
+<img (click)='getPokemon(12)' src="http://pokeapi.co/media/img/12.png">
+<img (click)='getPokemon(13)' src="http://pokeapi.co/media/img/13.png">
+<img (click)='getPokemon(14)' src="http://pokeapi.co/media/img/14.png">
+<img (click)='getPokemon(15)' src="http://pokeapi.co/media/img/15.png">
+<img (click)='getPokemon(16)' src="http://pokeapi.co/media/img/16.png">
+<img (click)='getPokemon(17)' src="http://pokeapi.co/media/img/17.png">
+<img (click)='getPokemon(18)' src="http://pokeapi.co/media/img/18.png">
+<img (click)='getPokemon(19)' src="http://pokeapi.co/media/img/19.png">
+<img (click)='getPokemon(20)' src="http://pokeapi.co/media/img/20.png">
+<img (click)='getPokemon(21)' src="http://pokeapi.co/media/img/21.png">
+<img (click)='getPokemon(22)' src="http://pokeapi.co/media/img/22.png">
+<img (click)='getPokemon(23)' src="http://pokeapi.co/media/img/23.png">
+<img (click)='getPokemon(24)' src="http://pokeapi.co/media/img/24.png">
+<img (click)='getPokemon(25)' src="http://pokeapi.co/media/img/25.png">
+<img (click)='getPokemon(26)' src="http://pokeapi.co/media/img/26.png">
+<img (click)='getPokemon(27)' src="http://pokeapi.co/media/img/27.png">
+<img (click)='getPokemon(28)' src="http://pokeapi.co/media/img/28.png">
+<img (click)='getPokemon(29)' src="http://pokeapi.co/media/img/29.png">
+<img (click)='getPokemon(30)' src="http://pokeapi.co/media/img/30.png">
+<img (click)='getPokemon(31)' src="http://pokeapi.co/media/img/31.png">
+<img (click)='getPokemon(32)' src="http://pokeapi.co/media/img/32.png">
+<img (click)='getPokemon(33)' src="http://pokeapi.co/media/img/33.png">
+<img (click)='getPokemon(34)' src="http://pokeapi.co/media/img/34.png">
+<img (click)='getPokemon(35)' src="http://pokeapi.co/media/img/35.png">
+<img (click)='getPokemon(36)' src="http://pokeapi.co/media/img/36.png">
+<img (click)='getPokemon(37)' src="http://pokeapi.co/media/img/37.png">
+<img (click)='getPokemon(38)' src="http://pokeapi.co/media/img/38.png">
+<img (click)='getPokemon(39)' src="http://pokeapi.co/media/img/39.png">
+<img (click)='getPokemon(40)' src="http://pokeapi.co/media/img/40.png">
+<img (click)='getPokemon(41)' src="http://pokeapi.co/media/img/41.png">
+<img (click)='getPokemon(42)' src="http://pokeapi.co/media/img/42.png">
+<img (click)='getPokemon(43)' src="http://pokeapi.co/media/img/43.png">
+<img (click)='getPokemon(44)' src="http://pokeapi.co/media/img/44.png">
+<img (click)='getPokemon(45)' src="http://pokeapi.co/media/img/45.png">
+<img (click)='getPokemon(46)' src="http://pokeapi.co/media/img/46.png">
+<img (click)='getPokemon(47)' src="http://pokeapi.co/media/img/47.png">
+<img (click)='getPokemon(48)' src="http://pokeapi.co/media/img/48.png">
+<img (click)='getPokemon(49)' src="http://pokeapi.co/media/img/49.png">
+<img (click)='getPokemon(50)' src="http://pokeapi.co/media/img/50.png">
+<img (click)='getPokemon(51)' src="http://pokeapi.co/media/img/51.png">
+<img (click)='getPokemon(52)' src="http://pokeapi.co/media/img/52.png">
+<img (click)='getPokemon(53)' src="http://pokeapi.co/media/img/53.png">
+<img (click)='getPokemon(54)' src="http://pokeapi.co/media/img/54.png">
+<img (click)='getPokemon(55)' src="http://pokeapi.co/media/img/55.png">
+<img (click)='getPokemon(56)' src="http://pokeapi.co/media/img/56.png">
+<img (click)='getPokemon(57)' src="http://pokeapi.co/media/img/57.png">
+<img (click)='getPokemon(58)' src="http://pokeapi.co/media/img/58.png">
+<img (click)='getPokemon(59)' src="http://pokeapi.co/media/img/59.png">
+<img (click)='getPokemon(60)' src="http://pokeapi.co/media/img/60.png">
+<img (click)='getPokemon(61)' src="http://pokeapi.co/media/img/61.png">
+<img (click)='getPokemon(62)' src="http://pokeapi.co/media/img/62.png">
+<img (click)='getPokemon(63)' src="http://pokeapi.co/media/img/63.png">
+<img (click)='getPokemon(64)' src="http://pokeapi.co/media/img/64.png">
+<img (click)='getPokemon(65)' src="http://pokeapi.co/media/img/65.png">
+<img (click)='getPokemon(66)' src="http://pokeapi.co/media/img/66.png">
+<img (click)='getPokemon(67)' src="http://pokeapi.co/media/img/67.png">
+<img (click)='getPokemon(68)' src="http://pokeapi.co/media/img/68.png">
+<img (click)='getPokemon(69)' src="http://pokeapi.co/media/img/69.png">
+<img (click)='getPokemon(70)' src="http://pokeapi.co/media/img/70.png">
+<img (click)='getPokemon(71)' src="http://pokeapi.co/media/img/71.png">
+<img (click)='getPokemon(72)' src="http://pokeapi.co/media/img/72.png">
+<img (click)='getPokemon(73)' src="http://pokeapi.co/media/img/73.png">
+<img (click)='getPokemon(74)' src="http://pokeapi.co/media/img/74.png">
+<img (click)='getPokemon(75)' src="http://pokeapi.co/media/img/75.png">
+<img (click)='getPokemon(76)' src="http://pokeapi.co/media/img/76.png">
+<img (click)='getPokemon(77)' src="http://pokeapi.co/media/img/77.png">
+<img (click)='getPokemon(78)' src="http://pokeapi.co/media/img/78.png">
+<img (click)='getPokemon(79)' src="http://pokeapi.co/media/img/79.png">
+<img (click)='getPokemon(80)' src="http://pokeapi.co/media/img/80.png">
+<img (click)='getPokemon(81)' src="http://pokeapi.co/media/img/81.png">
+<img (click)='getPokemon(82)' src="http://pokeapi.co/media/img/82.png">
+<img (click)='getPokemon(83)' src="http://pokeapi.co/media/img/83.png">
+<img (click)='getPokemon(84)' src="http://pokeapi.co/media/img/84.png">
+<img (click)='getPokemon(85)' src="http://pokeapi.co/media/img/85.png">
+<img (click)='getPokemon(86)' src="http://pokeapi.co/media/img/86.png">
+<img (click)='getPokemon(87)' src="http://pokeapi.co/media/img/87.png">
+<img (click)='getPokemon(88)' src="http://pokeapi.co/media/img/88.png">
+<img (click)='getPokemon(89)' src="http://pokeapi.co/media/img/89.png">
+<img (click)='getPokemon(90)' src="http://pokeapi.co/media/img/90.png">
+<img (click)='getPokemon(91)' src="http://pokeapi.co/media/img/91.png">
+<img (click)='getPokemon(92)' src="http://pokeapi.co/media/img/92.png">
+<img (click)='getPokemon(93)' src="http://pokeapi.co/media/img/93.png">
+<img (click)='getPokemon(94)' src="http://pokeapi.co/media/img/94.png">
+<img (click)='getPokemon(95)' src="http://pokeapi.co/media/img/95.png">
+<img (click)='getPokemon(96)' src="http://pokeapi.co/media/img/96.png">
+<img (click)='getPokemon(97)' src="http://pokeapi.co/media/img/97.png">
+<img (click)='getPokemon(98)' src="http://pokeapi.co/media/img/98.png">
+<img (click)='getPokemon(99)' src="http://pokeapi.co/media/img/99.png">
+<img (click)='getPokemon(100)'  src="http://pokeapi.co/media/img/100.png">
+<img (click)='getPokemon(101)'  src="http://pokeapi.co/media/img/101.png">
+<img (click)='getPokemon(102)'  src="http://pokeapi.co/media/img/102.png">
+<img (click)='getPokemon(103)'  src="http://pokeapi.co/media/img/103.png">
+<img (click)='getPokemon(104)'  src="http://pokeapi.co/media/img/104.png">
+<img (click)='getPokemon(105)'  src="http://pokeapi.co/media/img/105.png">
+<img (click)='getPokemon(106)'  src="http://pokeapi.co/media/img/106.png">
+<img (click)='getPokemon(107)'  src="http://pokeapi.co/media/img/107.png">
+<img (click)='getPokemon(108)'  src="http://pokeapi.co/media/img/108.png">
+<img (click)='getPokemon(109)'  src="http://pokeapi.co/media/img/109.png">
+<img (click)='getPokemon(110)'  src="http://pokeapi.co/media/img/110.png">
+<img (click)='getPokemon(111)'  src="http://pokeapi.co/media/img/111.png">
+<img (click)='getPokemon(112)'  src="http://pokeapi.co/media/img/112.png">
+<img (click)='getPokemon(113)'  src="http://pokeapi.co/media/img/113.png">
+<img (click)='getPokemon(114)'  src="http://pokeapi.co/media/img/114.png">
+<img (click)='getPokemon(115)'  src="http://pokeapi.co/media/img/115.png">
+<img (click)='getPokemon(116)'  src="http://pokeapi.co/media/img/116.png">
+<img (click)='getPokemon(117)'  src="http://pokeapi.co/media/img/117.png">
+<img (click)='getPokemon(118)'  src="http://pokeapi.co/media/img/118.png">
+<img (click)='getPokemon(119)'  src="http://pokeapi.co/media/img/119.png">
+<img (click)='getPokemon(120)'  src="http://pokeapi.co/media/img/120.png">
+<img (click)='getPokemon(121)'  src="http://pokeapi.co/media/img/121.png">
+<img (click)='getPokemon(122)'  src="http://pokeapi.co/media/img/122.png">
+<img (click)='getPokemon(123)'  src="http://pokeapi.co/media/img/123.png">
+<img (click)='getPokemon(124)'  src="http://pokeapi.co/media/img/124.png">
+<img (click)='getPokemon(125)'  src="http://pokeapi.co/media/img/125.png">
+<img (click)='getPokemon(126)'  src="http://pokeapi.co/media/img/126.png">
+<img (click)='getPokemon(127)'  src="http://pokeapi.co/media/img/127.png">
+<img (click)='getPokemon(128)'  src="http://pokeapi.co/media/img/128.png">
+<img (click)='getPokemon(129)'  src="http://pokeapi.co/media/img/129.png">
+<img (click)='getPokemon(130)'  src="http://pokeapi.co/media/img/130.png">
+<img (click)='getPokemon(131)'  src="http://pokeapi.co/media/img/131.png">
+<img (click)='getPokemon(132)'  src="http://pokeapi.co/media/img/132.png">
+<img (click)='getPokemon(133)'  src="http://pokeapi.co/media/img/133.png">
+<img (click)='getPokemon(134)'  src="http://pokeapi.co/media/img/134.png">
+<img (click)='getPokemon(135)'  src="http://pokeapi.co/media/img/135.png">
+<img (click)='getPokemon(136)'  src="http://pokeapi.co/media/img/136.png">
+<img (click)='getPokemon(137)'  src="http://pokeapi.co/media/img/137.png">
+<img (click)='getPokemon(138)'  src="http://pokeapi.co/media/img/138.png">
+<img (click)='getPokemon(139)'  src="http://pokeapi.co/media/img/139.png">
+<img (click)='getPokemon(140)'  src="http://pokeapi.co/media/img/140.png">
+<img (click)='getPokemon(141)'  src="http://pokeapi.co/media/img/141.png">
+<img (click)='getPokemon(142)'  src="http://pokeapi.co/media/img/142.png">
+<img (click)='getPokemon(143)'  src="http://pokeapi.co/media/img/143.png">
+<img (click)='getPokemon(144)'  src="http://pokeapi.co/media/img/144.png">
+<img (click)='getPokemon(145)'  src="http://pokeapi.co/media/img/145.png">
+<img (click)='getPokemon(146)'  src="http://pokeapi.co/media/img/146.png">
+<img (click)='getPokemon(147)'  src="http://pokeapi.co/media/img/147.png">
+<img (click)='getPokemon(148)'  src="http://pokeapi.co/media/img/148.png">
+<img (click)='getPokemon(149)'  src="http://pokeapi.co/media/img/149.png">
+<img (click)='getPokemon(150)'  src="http://pokeapi.co/media/img/150.png">
